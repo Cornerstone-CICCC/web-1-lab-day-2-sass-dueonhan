@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  z-index: 100;
+}
+
+body > main > h1 {
+  padding: 60px 0 40px 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+section h2 {
+  background-color: rgb(33, 255, 251);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#gallery-1 section:nth-child(2) h2 {
+  position: sticky;
+  top: 40px;
+  z-index: 10;
+}
+
+#gallery-1 section:nth-child(3) h2 {
+  position: sticky;
+  top: 40px;
+  z-index: 11;
+}
+
+#gallery-1 section:nth-child(4) h2 {
+  position: sticky;
+  top: 40px;
+  z-index: 12;
+}
+
+#gallery-1 section.fruit-hover h2 {
+  position: sticky;
+  top: 40px;
+  z-index: 13;
+}
+
+figure {
+  width: 300px;
+  height: auto;
+  position: relative;
+}
+
+figure > img {
+  width: 300px;
+  z-index: 0;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  opacity: 0;
+  pointer-events: none;
+  background-color: red;
+  color: white;
+}
+
+figure:hover .overlay-text {
+  opacity: 1;
+}
+
+.back-to-top-btn {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column-reverse;
+  float: right;
+}
+.back-to-top-btn a {
+  color: white;
+  text-decoration: none;
+}
+.back-to-top-btn a:visited {
+  color: white;
+}
+.back-to-top-btn a:hover {
+  color: white;
+}
+.back-to-top-btn a:active {
+  color: white;
+}
+.back-to-top-btn a:focus {
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  * {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
